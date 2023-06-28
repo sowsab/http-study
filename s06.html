@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 제목을 작성할때 h시리즈 사용 -->
+    <h1>다람쥐 헌 쳇바퀴에 타고파</h1>
+    <h2>다람쥐 헌 쳇바퀴에 타고파</h2>
+    <h3>다람쥐 헌 쳇바퀴에 타고파</h3>
+    <h4>다람쥐 헌 쳇바퀴에 타고파</h4>
+    <h5>다람쥐 헌 쳇바퀴에 타고파</h5>
+    <h6>다람쥐 헌 쳇바퀴에 타고파</h6>
+
+    <hr />
+    <!-- p 태그는 문장을 만들때 사용 블록 속성 -->
+    <p>안녕하세요. 제이본 입니다.</p>
+    <p>안녕하세요. 제이본 입니다.</p>
+
+    <hr />
+    <!-- br태그는 다음줄로 넘길때 사용 (개행) -->
+    안녕<br />하세요.
+
+    <hr />
+    <!-- div는 문단이다 문장안에 안들어간다 -->
+    <div>
+      <p>dd</p>
+    </div>
+
+    <hr />
+    <!-- span 태그는 중간에 뭘 집어넣을 때 사용 -->
+    <p>
+      안녕하세요. <span style="background-color: yellow">제이본</span> 입니다.
+    </p>
+
+    <hr />
+    <!-- details 태그는 무언가를 숨길때 사용 summary 태그를 누르면 나타난다 -->
+    <details>
+      <summary>잠온다</summary>
+      <p>자라</p>
+    </details>
+
+    <hr />
+    <!-- ul 태그는 순서 없는 목차를 만들때 사용 태그 안에 li 태그를 넣는다 -->
+    <ul>
+      <li>라면</li>
+      <li>과자</li>
+      <li>햄</li>
+    </ul>
+
+    <hr />
+    <!-- ol 태그는 순서 있는 목차를 만든다 -->
+    <ol>
+      <li>잠자기</li>
+      <li>먹기</li>
+      <li>싸기</li>
+    </ol>
+
+    <hr />
+    <!-- a태그의 타겟은 현재탭에서 이동 시킬지 새탭을 이용할지를 결정한다 -->
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer">구글로 이동</a>
+
+    <hr />
+    <!-- img 태그는 이미지 파일을 출력할때 사용 대표적인 인라인 블록 태그 -->
+    <!-- src는 source의 줄임말이다, alt는 이미지가 깨졌을때 설명하기 위한것 -->
+    <img src="https://zrr.kr/N9WI" alt="우주 오리" width="300" />
+
+    <hr />
+    <!-- strong 태그는 글자를 굵게 해준다 -->
+    <p>이 기차 번호는 <strong>999</strong> 입니다.</p>
+
+    <hr />
+    <!-- input은 대화형을 구현할때 사용한다 -->
+    <!-- 자바스크립트를 모르면 무용지물 -->
+    <h1>텍스트 입력</h1>
+    <input type="text" />
+    <h1>비밀번호 입력</h1>
+    <input type="password" />
+    <h1>체크박스</h1>
+    <!-- label은 input 태그의 제목을 붙인다 -->
+    <label>
+      <input type="checkbox" />
+      밥먹기
+    </label>
+    <!-- radio는 name 기준으로 작동 checked를 넣으면 기본적으로 체크된다 -->
+    <!-- disabled를 넣으면 비활성화 된다 -->
+    <h1>라디오 버튼</h1>
+    <label>
+      <input type="radio" name="ok" checked />
+      예
+    </label>
+    <label>
+      <input type="radio" name="ok" />
+      아니요
+    </label>
+    <label>
+      <input type="radio" name="ok" disabled />
+      몰라요
+    </label>
+    <h1>이메일 입력</h1>
+    <input type="email" name="id" />
+    <h1>날짜 입력</h1>
+    <input type="date" name="date" />
+    <h1>파일 입력</h1>
+    <input type="file" name="id" />
+    <h1>범위 입력</h1>
+    <input type="range" name="id" />
+    <h1>색상 입력</h1>
+    <input type="color" />
+
+    <hr />
+    <!-- fieldset은 박스를 가둬두고 legend는 박스의 제목을 붙인다 -->
+    <fieldset>
+      <legend>로그인</legend>
+      <p>
+        <!-- input의 id와 label의 for는 연결되는 관계다 -->
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" />
+      </p>
+      <p>
+        <label for="passwd">비밀번호</label>
+        <input type="password" id="passwd" />
+      </p>
+    </fieldset>
+
+    <hr />
+    <!-- textarea는 문장을 입력할때 사용 col은 줄당 문자수고, rows는 줄이다 -->
+    <textarea cols="30" rows="10"></textarea>
+
+    <hr />
+    <!-- button이 타입에 영향을 받는다 -->
+    <button type="button">눌러주세요</button>
+
+    <hr />
+    <!-- 현재 문서에 다른 사이트를 넣는데 사용 -->
+    <iframe width="560" height="315" src="https://wikidocs.net"></iframe>
+
+    <hr />
+
+    <audio src="https://zrr.kr/5Xik" controls></audio>
+
+    <video src="https://zrr.kr/Mghf" controls width="400"></video>
+
+    <hr />
+    <!-- 유튜브 퍼가기 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/JaB59kgG1ww"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <hr />
+  </body>
+</html>

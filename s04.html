@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        div {
+            background-color: red;
+            /* block 태그인 div는 높이와 넓이를 가질 수 있다 */
+            height: 100px;
+        }
+       
+        span {
+            background-color: blue;
+             /* inline 태그인 span은 높이와 넓이가 세팅 되지 않는다 */
+            height: 100px;
+            color: white;
+        }
+
+        .ib {
+            background-color: green;
+            /* inline 태그를 넣어 씌운 블록인 div는 높이와 넓이를 가질 수 있다 */
+            height: 100px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>블록 태그입니다</div>
+    <!-- <span>인라인 태그입니다</span> -->
+    <!-- <span>인라인 태그입니다</span> -->
+    <!-- div를 inline으로 덮어씌웠다 -->
+    <div class="ib" style="display: inline-block;">인라인 블록 태그입니다</div>
+    <div class="ib" style="display: inline-block;">인라인 블록 태그입니다</div>
+</body>
+</html>
